@@ -1,4 +1,4 @@
-CREATE DATABASE burgers;
+CREATE DATABASE black_burger;
 
 CREATE TABLE IF NOT EXISTS users(
   id serial primary key,
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS user_order(
   price int,
   discount int,
   tax int,
-  total_price int
+  total_price int,
   creat_at timestamp default now()
 )
 

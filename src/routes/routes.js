@@ -22,27 +22,25 @@ const {
 } = require('../controllers/orders')
 const { singUpAdmin, singInAdmin } = require('../controllers/admin')
 
-routes.post('/singup', singUpUser)
+routes.post('/', singUpUser)
 routes.post('/singin', singInUser)
 
 routes.post('/admin/singup', singUpAdmin)
 routes.post('/admin', singInAdmin)
 
-routes.use(userVerification)
+routes.post('/categories', userVerification, createCategories)
+routes.get('/categories', userVerification, listCategories)
+routes.put('/categories/:id', userVerification, updateCategories)
+routes.delete('/categories/:id', userVerification, deleteCategories)
 
-routes.post('/categories', createCategories)
-routes.get('/categories', listCategories)
-routes.put('/categories/:id', updateCategories)
-routes.delete('/categories/:id', deleteCategories)
+routes.post('/products', userVerification, addProduct)
+routes.get('/products', userVerification, listProducts);
+routes.put('/products/:id', userVerification, updateProducts);
+routes.delete('/deleteproducts/:id', userVerification, deleteProduct);
 
-routes.post('/products', addProduct)
-routes.get('/products', listProducts);
-routes.put('/products/:id', updateProducts);
-routes.delete('/deleteproducts/:id', deleteProduct);
-
-routes.post('/userorder', userOrder)
-routes.post('/orderitem', orderItem)
-routes.get('/userorder/:id', listOrder)
-routes.get('/orderitems/:id/:orderid', listOrderItems)
+routes.post('/userorder', userVerification, userOrder)
+routes.post('/orderitem', userVerification, orderItem)
+routes.get('/userorder/:id', userVerification, listOrder)
+routes.get('/orderitems/:id/:orderid', userVerification, listOrderItems)
 
 module.exports = routes;
