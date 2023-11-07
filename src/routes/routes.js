@@ -22,8 +22,8 @@ const {
 } = require('../controllers/orders')
 const { singUpAdmin, singInAdmin } = require('../controllers/admin')
 
-routes.post('/', singUpUser)
-routes.post('/singin', singInUser)
+routes.post('/', singInUser)
+routes.post('/singup', singUpUser)
 
 routes.post('/admin/singup', singUpAdmin)
 routes.post('/admin', singInAdmin)
