@@ -1,6 +1,6 @@
 <h1 align="center"> Black Burger API 🍔 </h1>
 
-API desenvolvida para servir os dados da aplicação Black Burger, meu projeto final do cruso de Desing de Layouts em [Figma](https://www.figma.com/).
+API desenvolvida para servir os dados da aplicação Black Burger, meu projeto final do cruso de Desing de Layouts em Figma.
 Podendo ser visualizada clicando [aqui!](https://www.figma.com/file/m79zsNd8MjArJemNZ56Zbk/Black-Burger?type=design&node-id=0%3A1&mode=design&t=MEAtrz5SJA3uoyJB-1)
 
 ![](https://images2.imgbox.com/41/60/6Bt55vp4_o.png)
@@ -32,7 +32,7 @@ Para esta API REST foram utilizadas as seguintes tecnologias:
 
 <h1 align="center"> Bibliotecas 📚 </h1>
 
-Para complementar o projeto foi utilizado as bibliotecas abaixo:
+Para complementar o projeto foram utilizadas as bibliotecas abaixo:
 
 * Nodemon (desenvolvimento)
 * Bcrypt
