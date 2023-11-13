@@ -18,7 +18,8 @@ const {
   userOrder,
   orderItem,
   listOrder,
-  listOrderItems
+  listOrderItems,
+  deleteOrder
 } = require('../controllers/orders')
 const { singUpAdmin, singInAdmin } = require('../controllers/admin')
 
@@ -42,5 +43,6 @@ routes.post('/userorder', userVerification, userOrder)
 routes.post('/orderitem', userVerification, orderItem)
 routes.get('/userorder/:id', userVerification, listOrder)
 routes.get('/orderitems/:id/:orderid', userVerification, listOrderItems)
+routes.delete('/orderitems/:id', userVerification, deleteOrder)
 
 module.exports = routes;
