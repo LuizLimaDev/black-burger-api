@@ -92,7 +92,7 @@ const listOrderItems = async (req, res) => {
   }
 }
 
-const deleteOrder = async (req, res) => {
+const deleteUserOrder = async (req, res) => {
   const { id } = req.params
 
   if (!id) {
@@ -109,11 +109,33 @@ const deleteOrder = async (req, res) => {
   }
 };
 
+const deleteItemOrder = async (req, res) => {
+  const { id, orderid } = req.params
+
+  if (!id) {
+    return res.status(400).json({ menssagem: 'É necessário informar um ID.' })
+  }
+
+  try {
+    const response = await knex('order_item')
+      .del()
+      .where('user_id', id)
+      .andWhere('order_id', orderid)
+      .returning('*')
+
+    return res.status(200).json({ menssagem: `Ordem ${response[0].id} deletado com sucesso!` })
+
+  } catch (error) {
+    return res.status(400).json(error.detail)
+  }
+};
+
 
 module.exports = {
   userOrder,
   orderItem,
   listOrder,
   listOrderItems,
-  deleteOrder
+  deleteUserOrder,
+  deleteItemOrder
 }

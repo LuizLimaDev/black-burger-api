@@ -19,7 +19,8 @@ const {
   orderItem,
   listOrder,
   listOrderItems,
-  deleteOrder
+  deleteUserOrder,
+  deleteItemOrder
 } = require('../controllers/orders')
 const { singUpAdmin, singInAdmin } = require('../controllers/admin')
 
@@ -40,9 +41,12 @@ routes.put('/products/:id', userVerification, updateProducts);
 routes.delete('/deleteproducts/:id', userVerification, deleteProduct);
 
 routes.post('/userorder', userVerification, userOrder)
-routes.post('/orderitem', userVerification, orderItem)
 routes.get('/userorder/:id', userVerification, listOrder)
+routes.delete('/userorder/:id', userVerification, deleteUserOrder)
+
+routes.post('/orderitem', userVerification, orderItem)
 routes.get('/orderitems/:id/:orderid', userVerification, listOrderItems)
-routes.delete('/orderitems/:id', userVerification, deleteOrder)
+routes.delete('/orderitems/:id/:orderid', userVerification, deleteItemOrder)
+
 
 module.exports = routes;
