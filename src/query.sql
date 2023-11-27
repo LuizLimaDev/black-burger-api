@@ -9,6 +9,14 @@ CREATE TABLE IF NOT EXISTS users(
   favorites_products int
 )
 
+CREATE TABLE IF NOT EXISTS users_thirdservice(
+  id serial primary key,
+  name varchar(100) not null,
+  email varchar(100) not null unique,
+  iamge varchar(500) not null,
+  favorites_products int
+)
+
 CREATE TABLE IF NOT EXISTS products_categories(
 	id serial primary key,
   name varchar(100) not null
