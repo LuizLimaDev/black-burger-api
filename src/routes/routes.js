@@ -39,6 +39,7 @@ routes.delete('/categories/:id', userVerification, deleteCategories)
 
 routes.post('/products', userVerification, addProduct)
 routes.get('/products', userVerification, listProducts);
+routes.get('/productsThirdPartyService', listProducts);
 routes.put('/products/:id', userVerification, updateProducts);
 routes.delete('/deleteproducts/:id', userVerification, deleteProduct);
 
