@@ -1,6 +1,6 @@
 const express = require('express')
 const routes = express()
-const { signUpUser, signInUser, signUpUserThirdService, signInUserThirdService } = require('../controllers/users')
+const { signUpUser, signInUser } = require('../controllers/users')
 const userVerification = require('../middlewares/authentication')
 const {
   createCategories,
@@ -26,8 +26,6 @@ const { signUpAdmin, signInAdmin } = require('../controllers/admin')
 
 routes.post('/', signInUser)
 routes.post('/signup', signUpUser)
-routes.post('/signinthirdservice', signInUserThirdService)
-routes.post('/signupthirdservice', signUpUserThirdService)
 
 routes.post('/admin/signup', signUpAdmin)
 routes.post('/admin', signInAdmin)
@@ -39,6 +37,7 @@ routes.delete('/categories/:id', userVerification, deleteCategories)
 
 routes.post('/products', userVerification, addProduct)
 routes.get('/products', userVerification, listProducts);
+routes.get('/productsThirdPartyService', listProducts);
 routes.put('/products/:id', userVerification, updateProducts);
 routes.delete('/deleteproducts/:id', userVerification, deleteProduct);
 
