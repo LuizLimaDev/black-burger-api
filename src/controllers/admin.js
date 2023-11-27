@@ -2,7 +2,7 @@ const knex = require('../services/conection')
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcrypt')
 
-const singUpAdmin = async (req, res) => {
+const signUpAdmin = async (req, res) => {
   const { name, email, password } = req.body
 
   if (!name || !email || !password) {
@@ -36,7 +36,7 @@ const singUpAdmin = async (req, res) => {
   }
 }
 
-const singInAdmin = async (req, res) => {
+const signInAdmin = async (req, res) => {
   const { email, password } = req.body
 
   if (!email || !password) {
@@ -71,6 +71,6 @@ const singInAdmin = async (req, res) => {
 }
 
 module.exports = {
-  singInAdmin,
-  singUpAdmin
+  signInAdmin,
+  signUpAdmin
 }
