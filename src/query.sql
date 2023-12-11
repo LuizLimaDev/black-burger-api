@@ -65,3 +65,13 @@ CREATE TABLE IF NOT EXISTS users_admin(
   password text
 )
 
+DROP TABLE user_favorites
+
+CREATE TABLE IF NOT EXISTS category_type (
+ id serial primary key,
+name varchar(100) not null
+)
+
+ALTER TABLE products
+ADD product_type int
+references category_type(id)
