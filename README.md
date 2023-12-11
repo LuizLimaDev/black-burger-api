@@ -10,7 +10,7 @@ Podendo ser visualizada clicando [aqui!](https://www.figma.com/file/N6el2YBLDYpE
 A arquitetura do banco de dados foi desenvolvida no [dbdiagram](https://dbdiagram.io/d/black-burger-64dbcbf202bd1c4a5ed26308) .
 Pensando nas telas e navegação da aplicaçao.
 
-![](https://kaxldpcjxwaekolzjlsh.supabase.co/storage/v1/object/sign/Images/backend-schema.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvYmFja2VuZC1zY2hlbWEucG5nIiwiaWF0IjoxNzAyMjkzMjE2LCJleHAiOjQ4MjQzNTcyMTZ9.EdzhoE5SKveHSSBn3xouP3DCVMsNqnJ5DXFBqZTfB3E&t=2023-12-11T11%3A13%3A36.993Z)
+![dbdiagram](https://kaxldpcjxwaekolzjlsh.supabase.co/storage/v1/object/sign/Images/backend-schema.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvYmFja2VuZC1zY2hlbWEucG5nIiwiaWF0IjoxNzAyMzExNTE2LCJleHAiOjQ4MjQzNzU1MTZ9.-3GLKbSzxEcOWIFaIKrvJ2hoDktzkyE5sGIZFWIIcok&t=2023-12-11T16%3A18%3A37.142Z) 
 
 <h1 align="center"> API Scope 🎯 </h1>
 
