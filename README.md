@@ -3,7 +3,7 @@
 API desenvolvida para servir os dados da aplicação Black Burger, meu projeto final do cruso de Desing de Layouts em Figma.
 Podendo ser visualizada clicando [aqui!](https://www.figma.com/file/N6el2YBLDYpEiiCHMv0E9D/Black-Burger?type=design&node-id=0%3A1&mode=design&t=9UvlzBTva2a9ClPc-1)
 
-![](https://images2.imgbox.com/41/60/6Bt55vp4_o.png)
+![](https://kaxldpcjxwaekolzjlsh.supabase.co/storage/v1/object/sign/Images/figma%20layout.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvZmlnbWEgbGF5b3V0LnBuZyIsImlhdCI6MTcwMjU5ODE1NSwiZXhwIjo0ODI0NjYyMTU1fQ.ppd7poXTe6ZYTlcroIXA7wdQkJROm0YzzA_o3A5JcEY&t=2023-12-14T23%3A55%3A55.265Z)
 
 <h1 align="center"> Database Diagram 📜 </h1>
 
